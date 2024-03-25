@@ -7,32 +7,46 @@ body {
 
 .center1 {
     border: 0px solid;
-    position: absolute;
+    position: fixed;
+    height: 220px;
+    width:100%;
     top: 20%;
-    left: 20%;
+    /* left: 20%; */
     transform: translate(0, -50%);
+    /* background-color: aqua; */
 }
 
 
 div.topnav {
     position: relative;
     background-color: blueviolet;
-    border-radius: 2%;
+    border-radius: 5px 5px;
+    block-size: 40px;
     overflow: hidden;
 
 }
 
 .nav2 {
-    position: relative;
-    left: 60%;
+    position: fixed;
+    right: 170px;
+    font-size: larger;
     color: #e6e6f2;
 }
+
+.nav3 {
+    position: fixed;
+    right: 25px;
+    font-size: larger;
+    color: #e6e6f2;
+}
+
+
 
 #unlucky {
     font-weight: bold;
     color: red;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 80px;
+    font-size: 60px;
 
 }
 
@@ -40,21 +54,26 @@ div.topnav {
     color: whitesmoke;
     font-size: x-large;
     font-weight: bolder;
+    position: relative;
+    left: 5px;
 }
 
 .food_button {
     background-color:antiquewhite;
     height: 100px;
     width: 150px;
+    border: 0px solid rgb(245, 233, 233);
     border-radius: 10%;
     font-size: 38px;
     font-weight: 900;
     font-weight: bolder;
+    text-shadow: -3px 2px 1px rgb(255, 255, 255);
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.3s ease-in-out;
     transition: font-size 0.2s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
     position: absolute;
     top: 50%;
     left: 20%
@@ -65,15 +84,20 @@ div.topnav {
     height: 100px;
     width: 150px;
     font-size: 45px;
+    text-shadow: -3px 1px 2px black;
     color: rgb(255, 255, 255);
     font-weight: 900;
     font-weight: bolder;
     display: inline-block;
     cursor: pointer;
+    box-shadow: 0px 10px 15px rgb(119, 69, 166);
     transition: font-size 0.02s ease-in-out;
 }
 
 .food_button:active{
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
     font-size: 55px;
     font-stretch:extra-condensed;
 }
@@ -81,6 +105,11 @@ div.topnav {
 
 #eatwhat{
     font-size: 100px;
+    color: #373737;
+    text-shadow: -2px 6px 0px rgb(255, 255, 255);
+    position: fixed;
+    left: 15%;
+    
 
 }
 
@@ -105,7 +134,152 @@ div.topnav {
   }
 
   .bottom-font{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     font-size: small;
+  }
+
+.showfoodpic{
+    width: 100%;
+  }
+.secondsection{
+    background-color: rgb(247, 245, 237);
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    /* height: 35%; */
+    height: 20%;
+    /* top: 65%; */
+    top:80%;
+    /* top: 700px; */
+    left: 0%;
+}
+
+
+  @media (max-width: 1200px) {
+    #eatwhat {
+        font-size: 80px;
+    }
+    #unlucky {
+        font-size: 50px;
+    }
+    .nav2 {
+        position: fixed;
+        right: 10px;
+        top: 7px;
+        font-size: medium;
+        z-index: 1;
+        white-space: nowrap;
+        color: #e6e6f2;
+    }
+    .nav3 {
+        position: fixed;
+        right: 20px;
+        top: 23px;
+        font-size: medium;
+        z-index: 1;
+        white-space: nowrap;
+        color: #e6e6f2;
+    }
+    #whynot {
+        color: whitesmoke;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    
+  }
+
+
+  @media (max-width: 360px) {
+    #eatwhat {
+        font-size: 50px;
+    }
+    #unlucky {
+        font-size: 30px;
+    }
+    .nav2 {
+        position: fixed;
+        right: 10px;
+        top: 7px;
+        font-size: x-small;
+        z-index: 1;
+        white-space: nowrap;
+        color: #e6e6f2;
+    }
+    .nav3 {
+        position: fixed;
+        right: 20px;
+        top: 19px;
+        font-size: xx-small;
+        z-index: 1;
+        white-space: nowrap;
+        color: #e6e6f2;
+    }
+    #whynot {
+        color: whitesmoke;
+        font-size: large;
+        font-weight: bolder;
+    }
+    
+  }
+
+  @media (max-width: 520px) {
+    #eatwhat {
+        font-size: 50px;
+    }
+    #unlucky {
+        font-size: 30px;
+    }
+    .nav2 {
+        position: fixed;
+        right: 10px;
+        top: 7px;
+        font-size: smaller;
+        z-index: 1;
+        white-space: nowrap;
+        color: #e6e6f2;
+    }
+    .nav3 {
+        position: fixed;
+        right: 20px;
+        top: 25px;
+        font-size: x-small;
+        z-index: 1;
+        white-space: nowrap;
+        color: #e6e6f2;
+    }
+    #whynot {
+        color: whitesmoke;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    
+  }
+
+  @media (max-width: 280) {
+    .nav2 {
+        position: fixed;
+        right: 10px;
+        top: 7px;
+        font-size: smaller;
+        z-index: 1;
+        white-space: nowrap;
+        color: #e6e6f2;
+    }
+    .nav3 {
+        position: fixed;
+        right: 20px;
+        top: 19px;
+        font-size: x-small;
+        z-index: 1;
+        white-space: nowrap;
+        color: #e6e6f2;
+    }
+    #whynot {
+        color: whitesmoke;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    
   }
