@@ -2,7 +2,7 @@
         //const {parse} = require("csv-parse")
         //alert if pressed too many times
         let times = 0;
-        const food = ["基湖二樓","麥當勞","西湖市場-豚勝","小七","全家","牛耳","香港喜園燒臘店","來佳海南雞","貝魯佳義大利麵","西湖市場-鍋燒麵90", 
+        const food = ["基湖二樓","麥當勞","西湖市場-豚勝","7-ELEVEN","全家","牛耳","香港喜園燒臘店","來佳海南雞","貝魯佳義大利麵","西湖市場-鍋燒麵90", 
         "西湖市場-首爾飯捲之家","西湖市場-韓式料理93", "西湖市場-嘉園大阪燒豬排","西湖涼麵","八方雲集","肯德基","濠記水餃",
         "西湖市場-加園烏龍麵","西湖市場-咖哩嚕哆","吉野家"]
         const foodimage = ["picture/minji.jpeg","picture/xihumcdon.jpeg","picture/xihutun.jpeg",]
