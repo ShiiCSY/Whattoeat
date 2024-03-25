@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+body {
+    background-color: #e6e6f2 ;
+}
+
+.center1 {
+    border: 0px solid;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(0, -50%);
+}
+
+
+div.topnav {
+    position: relative;
+    background-color: blueviolet;
+    border-radius: 2%;
+    overflow: hidden;
+
+}
+
+.nav2 {
+    position: relative;
+    left: 60%;
+    color: #e6e6f2;
+}
+
+#unlucky {
+    font-weight: bold;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+
+}
+
+#whynot {
+    color: whitesmoke;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.food_button {
+    background-color:antiquewhite;
+    height: 100px;
+    width: 150px;
+    border-radius: 10%;
+    font-size: 38px;
+    font-weight: 900;
+    font-weight: bolder;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    transition: font-size 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 20%
+}
+
+.food_button:hover{
+    background-color:rgb(119, 69, 166);
+    height: 100px;
+    width: 150px;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-weight: bolder;
+    display: inline-block;
+    cursor: pointer;
+    transition: font-size 0.02s ease-in-out;
+}
+
+.food_button:active{
+    font-size: 55px;
+    font-stretch:extra-condensed;
+}
+
+
+#eatwhat{
+    font-size: 100px;
+
+}
+
+.noto-sans {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  #background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(none);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .bottom-font{
+    position: absolute;
+    bottom: 0;
+    font-size: small;
+  }
