@@ -1,5 +1,5 @@
 # maintaining
-This is a beta version of a page for making lunch choices in the Xihu area.
+This is a beta version of a page for making lunch choices in your area.
 
 the current version does not support mobile devices and has lots of part to improve
 
